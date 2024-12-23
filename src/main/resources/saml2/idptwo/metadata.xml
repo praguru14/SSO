@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_822ea52c-97f0-4795-be1a-b7d76b37b5db" entityID="prafull"><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference URI="#_822ea52c-97f0-4795-be1a-b7d76b37b5db"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue/></ds:Reference></ds:SignedInfo><ds:SignatureValue/></ds:Signature><md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"><md:KeyDescriptor use="signing"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:X509Data><ds:X509Certificate>MIICyTCCAbGgAwIBAgIGAZPDKexbMA0GCSqGSIb3DQEBCwUAMBsxGTAXBgNVBAMMEFVub3RlY2gg
+U29mdHdhcmUwHhcNMjQxMjE0MDMxNTI0WhcNMjYwMTA4MTgzMDAwWjAbMRkwFwYDVQQKDBBVbm90
+ZWNoIFNvZnR3YXJlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsuq+c9frPEB9npHU
+5XSf1u+/uQZaYEMFGGan9BZR0XSV3uOkde+LJl+6sze21PR9SXr2YtYXBxNAopzzsP997Y1VYsP5
+Ul7KbhkMr8lorQJN4Dhcvg+pZkMy355Mjktbaj2OlZQBPLFNTYZ3HdhwO+jg+b7qG4+QfLpMx9pa
++cQdW6b38n5AnDlNlxhzORxL5yvHTGPbLNtn8JSoTZTcjbeWc3sxoDwe/aOC/qX37fXY8wTaJVKA
+M4dKqPPi/H46vb28YhrbxSJnaZk6EDSpTRewb4dyG630uiKhGCFlEIumwGdspS5lCswS1RRpeR8b
+HSMtMpr3e1QjBekxO4UX3wIDAQABoxMwETAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUA
+A4IBAQAOvSlefGURmtl2dyqPsXvy/o3IAKdi8zKJDpt6clI2+DMevs6W1yXY6MFztqzpG6h3/93i
+Pr+QgZGy++ibtTiwK+nMG4KRvszSK9fvtsE7jU5FZWA6cmKhsQwh7+ROAIy39xXdB5hCALB6NSiQ
+C4IGir/ZDmuyOJyxzABHg4djRVa5w7BpqBW3A2HZ9YiKYOo/5uZ4vDslJeDUDEqjaMHw1fu1fKqt
+53UjEGg8SMNJ7YfWsXDGiPUnOCwPhCDp/HDu/P09E7+2FnhOPok8FSlYBaPY6f2l0x7fTxP4C2jE
+XYX30jua7lMJtBgJZnkP2CSXq5sTW2Jm76Co4jcB4Le+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></md:KeyDescriptor><md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://prafull.cymmetri.io/samlsrvc/SingleLogoutService"/><md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat><md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://prafull.cymmetri.io/samlsrvc/SingleSignOnService"/><md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://prafull.cymmetri.io/samlsrvc/SingleSignOnService"/></md:IDPSSODescriptor></md:EntityDescriptor>
