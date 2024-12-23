@@ -10,11 +10,20 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
+
+        http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/admin/**").hasRole("admin")
-                .antMatchers("/user/**").hasRole("user")
+                .antMatchers("/saml2/**","/saml2/authenticate","/error").permitAll()
+                .anyRequest().authenticated()
                 .and()
-                .httpBasic();
+                .saml2Login(withDefaults());
+//        http
+//                .authorizeRequests()
+//                .antMatchers("/admin/**").hasRole("admin")
+//                .antMatchers("/user/**").hasRole("user")
+//                .and()
+//                .httpBasic();
     }
 }
+
+//http://localhost:8085/saml2/authenticate/idptwo
