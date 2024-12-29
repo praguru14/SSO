@@ -1,0 +1,25 @@
+[
+  {
+    key: 'roleName',
+    type: 'input',
+    templateOptions: {
+      label: 'Role Name',
+      required: true
+    }
+  },{
+    key: 'select',
+    type: 'ng-select',
+    templateOptions: {
+      multiple: true,
+      label: 'Role Name',
+      placeholder: 'Select Role',
+      required: true,
+      options: [
+        { label: 'Role 1', value: 1 },
+        { label: 'Role 2', value: 2 },
+        { label: 'Role 3', value: 3 },
+        { label: 'Role 4', value: 4 },
+      ]
+    }
+  }
+]

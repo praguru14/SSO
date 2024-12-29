@@ -1,0 +1,77 @@
+.theme-option {
+    .dropdown-item {
+      .theme-color-div{
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        margin-right: 12px;
+      }
+      .corporate-a {
+        background: map-get($map: $bgColor, $key: corporate) !important;
+
+      }
+      .fantacy-b {
+        background: linear-gradient($fantacy-a, $fantacy-b, $fantacy-c) !important;
+      }
+      .nature-c {
+        background: linear-gradient($nature-a, $nature-b, $nature-c) !important;
+      }
+      .defaults {
+          background: linear-gradient(183deg, #d46249 0%, #af4061 53%, #6a1054 100%);
+      }
+    }
+}
+.fantacy {
+    .side-menu-collapsed {
+        .side-menu {
+            .side-menu-list-item {
+            
+                &:hover {
+                    button {
+                        background-color: map-get($map: $bgColor, $key: bgHeader) !important;
+                    }
+                }
+            }
+            
+        }
+    }
+    .side-menu {
+        background: linear-gradient($fantacy-a, $fantacy-b, $fantacy-c) !important;
+    }
+    #page-topbar {
+        background: linear-gradient(98deg, $fantacy-a 0%, $fantacy-c 100%);
+        // background: linear-gradient(45deg, #ad49c6, #3d4451);
+
+        #vertical-menu-btn {
+            background: $fantacy-a !important;
+        }
+        .noti-icon i, .header-item {
+            color: map-get($map: $textColor, $key: theme2) !important;
+        }
+        .logo-white {
+            display: block;
+            margin-top: 12px;;
+        }
+        .logo-black {
+            display: none;
+        }
+    }
+    input[switch=primary]:checked+label {
+        background: map-get($map: $bgColor, $key: bgHeader);
+
+    }
+    .icon-demo-content1:hover i {
+        color: #570898;
+    }
+    .btn-dark {
+        background: $fantacy-c !important;
+    }
+    .btn-solid {
+        background-color: $fantacy-a;
+    }
+    .btn-grad {
+        background: linear-gradient(to left, $fantacy-c, $fantacy-b, $fantacy-a) !important;
+
+    }   
+    
+}

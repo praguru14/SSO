@@ -13,7 +13,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/saml2/**","/saml2/authenticate","/error").permitAll()
+                .antMatchers("/saml2/**","/saml2/authenticate","/error","/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .saml2Login(withDefaults());

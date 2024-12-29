@@ -1,0 +1,25 @@
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          idptwo:
+            identityprovider:
+              metadata-uri: "https://trial-8288682.okta.com/app/exkmve9mdzvsybXnO697/sso/saml/metadata"
+              entity-id: "http://www.okta.com/exkmve9mdzvsybXnO697"
+            acs:
+              location: "https://trial-8288682.okta.com/app/trial-8288682_ayup1_1/exkmu9i8euH9pEQas697/sso/saml"
+              binding: post
+            entity-id: "http://www.okta.com/exkmu9i8euH9pEQas697"
+      create-allow: true
+  resources:
+    static-locations: "classpath:/static/epps-ayup/"
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          saml2: DEBUG
+
+server:
+  port: 8085

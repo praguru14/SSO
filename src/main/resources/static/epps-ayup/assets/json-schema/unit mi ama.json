@@ -1,0 +1,55 @@
+[
+  {
+    key: 'command',
+    type: 'input',
+    templateOptions: {
+      label: 'Command',
+      required: true
+    }
+  },{
+    key: 'unit',
+    type: 'ng-select',
+    templateOptions: {
+      multiple: false,
+      label: 'Unit',
+      placeholder: 'Select Unit',
+      required: true,
+      options: [
+        { label: 'Unit 1', value: 1 },
+        { label: 'Unit 2', value: 2 },
+        { label: 'Unit 3', value: 3 },
+        { label: 'Unit 4', value: 4 },
+      ]
+    }
+  },{
+    key: 'miroom',
+    type: 'ng-select',
+    templateOptions: {
+      multiple: false,
+      label: 'MI Room',
+      placeholder: 'Select MI Room',
+      required: true,
+      options: [
+        { label: 'MI Room 1', value: 1 },
+        { label: 'MI Room 2', value: 2 },
+        { label: 'MI Room 3', value: 3 },
+        { label: 'MI Room 4', value: 4 },
+      ]
+    }
+  },{
+    key: 'AMA',
+    type: 'ng-select',
+    templateOptions: {
+      multiple: false,
+      label: 'AMA',
+      placeholder: 'Select AMA',
+      required: true,
+      options: [
+        { label: 'AMA 1', value: 1 },
+        { label: 'AMA 2', value: 2 },
+        { label: 'AMA 3', value: 3 },
+        { label: 'AMA 4', value: 4 },
+      ]
+    }
+  }
+];
